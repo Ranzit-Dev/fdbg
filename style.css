@@ -1,0 +1,206 @@
+/* General Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+div:hover{
+    background-color: antiquewhite;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+.container:hover {
+    color: rgb(122, 122, 122);
+}
+
+/* Navbar */
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    color: #fff;
+}
+
+.collapse .p-4 {
+    background: #444;
+}
+
+/* Section Styles */
+.section-1, .section-2, .section-3 {
+    padding: 20px 0;
+}
+
+.section-1 .card, .section-2 .card, .section-3 .card {
+    background: #f4f4f4;
+    border: none;
+}
+
+.section-1 .card-title, .section-2 .card-title, .section-3 .card-title {
+    color: #ff0606;
+}
+
+/* Card Deck */
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 10px;
+    flex: 1 1 300px;
+}
+.card:hover{
+    text-size-adjust: 20px;
+    background-color: rgb(140, 148, 148);
+    text-shadow: #555;
+}
+.card-body {
+    padding: 20px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+}
+
+.body-modal {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact-form {
+    text-align: left;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background: #555;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .copy-right p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .navbar-toggler {
+        float: right;
+    }
+
+    .collapse .p-4 {
+        text-align: center;
+    }
+
+    .section-1, .section-2, .section-3 {
+        text-align: center;
+    }
+
+    .card-deck {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 10px 0;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+}
